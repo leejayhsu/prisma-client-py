@@ -1,1 +1,1 @@
-from .cli import *
+from ._cli import *

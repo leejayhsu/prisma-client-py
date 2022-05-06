@@ -3,7 +3,7 @@ from typing import Iterator, Optional
 
 from . import client as _client
 from .client import RegisteredClient
-from .errors import ClientNotRegisteredError
+from ._errors import ClientNotRegisteredError
 
 
 @contextlib.contextmanager

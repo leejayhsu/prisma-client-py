@@ -7,12 +7,12 @@ import subprocess
 from pathlib import Path
 from typing import NoReturn, Dict, Type, Any
 
-from . import errors
-from .. import errors as prisma_errors
+from . import _errors
+from .. import _errors as prisma_errors
 
-from ..http_abstract import AbstractResponse
-from ..utils import time_since
-from ..binaries import GLOBAL_TEMP_DIR, ENGINE_VERSION, platform
+from .._http_abstract import AbstractResponse
+from .._utils import time_since
+from .._binaries import GLOBAL_TEMP_DIR, ENGINE_VERSION, _platform
 
 
 log: logging.Logger = logging.getLogger(__name__)

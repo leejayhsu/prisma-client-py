@@ -1,7 +1,7 @@
 import pytest
 
 from prisma import Prisma
-from prisma.errors import FieldNotFoundError, ForeignKeyViolationError
+from prisma._errors import FieldNotFoundError, ForeignKeyViolationError
 
 
 @pytest.mark.asyncio

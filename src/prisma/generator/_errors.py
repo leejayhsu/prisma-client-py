@@ -1,6 +1,6 @@
 from typing import Union
 
-from ..errors import PrismaError
+from .._errors import PrismaError
 
 
 class TemplateError(PrismaError):
@@ -21,4 +21,4 @@ class CompoundConstraintError(ValueError):
         )
 
 
-from .models import PrimaryKey, UniqueIndex
+from ._models import PrimaryKey, UniqueIndex

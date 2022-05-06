@@ -1,6 +1,6 @@
 import click
 
-from .utils import PathlibPath
+from ._utils import PathlibPath
 from .._types import FuncType
 
 

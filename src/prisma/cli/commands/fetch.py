@@ -1,20 +1,20 @@
 import click
 
 
-@click.command('fetch', short_help='Download all required binaries.')
+@click.command('fetch', short_help='Download all required _binaries.')
 @click.option(
     '--force',
     is_flag=True,
-    help='Download all binaries regardless of if they are already downloaded or not.',
+    help='Download all _binaries regardless of if they are already downloaded or not.',
 )
 def cli(force: bool) -> None:
-    """Ensures all required binaries are available."""
-    from ... import binaries
+    """Ensures all required _binaries are available."""
+    from ... import _binaries
 
     if force:
-        binaries.remove_all()
+        _binaries.remove_all()
 
-    directory = binaries.ensure_cached()
+    directory = _binaries.ensure_cached()
     click.echo(
-        f'Downloaded binaries to {click.style(str(directory), fg="green")}'
+        f'Downloaded _binaries to {click.style(str(directory), fg="green")}'
     )

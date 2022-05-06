@@ -2,9 +2,9 @@ import os
 import logging
 from pathlib import Path
 
-from . import platform
-from .binary import Binary
-from .constants import ENGINE_URL, ENGINE_VERSION, GLOBAL_TEMP_DIR
+from . import _platform
+from ._binary import Binary
+from ._constants import ENGINE_URL, ENGINE_VERSION, GLOBAL_TEMP_DIR
 
 
 __all__ = ('Engine',)

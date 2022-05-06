@@ -58,7 +58,7 @@ def cleanup(pkg_name: str = 'prisma') -> None:
 
     # the `prisma` package will always exist even when using a custom output
     # location so it is safe to use here
-    from prisma.generator.generator import cleanup_templates
+    from prisma.generator._generator import cleanup_templates
 
     cleanup_templates(rootdir=pkg_path.parent)
     print(f'Successfully removed all auto-generated files from {pkg_path}')

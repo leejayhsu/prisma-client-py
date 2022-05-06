@@ -1,7 +1,7 @@
 from pathlib import Path
 from typing import Iterator
 
-from prisma.generator.utils import resolve_template_path
+from prisma.generator._utils import resolve_template_path
 
 
 def iter_templates_dir(path: Path) -> Iterator[Path]:

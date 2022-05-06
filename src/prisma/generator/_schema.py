@@ -3,7 +3,7 @@ from typing import Any, Dict, List, Tuple, Type, Union
 
 from pydantic import BaseModel
 
-from .models import AnyData, Model as ModelInfo, PrimaryKey
+from ._models import AnyData, Model as ModelInfo, PrimaryKey
 from .._compat import root_validator, cached_property
 
 

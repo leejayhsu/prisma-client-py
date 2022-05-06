@@ -3,9 +3,9 @@ from pathlib import Path
 import pytest
 from _pytest.logging import LogCaptureFixture
 
-from prisma.utils import temp_env_update
-from prisma.binaries import BINARIES, ENGINES, Engine
-from prisma.binaries.constants import PRISMA_CLI_NAME
+from prisma._utils import temp_env_update
+from prisma._binaries import BINARIES, ENGINES, Engine
+from prisma._binaries._constants import PRISMA_CLI_NAME
 
 
 def test_skips_cached_binary(caplog: LogCaptureFixture) -> None:

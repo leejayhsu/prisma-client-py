@@ -1,7 +1,7 @@
 import pytest
 import prisma
 from prisma import Prisma, register, get_client
-from prisma.testing import reset_client
+from prisma._testing import reset_client
 
 
 @pytest.mark.prisma

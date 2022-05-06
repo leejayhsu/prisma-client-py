@@ -1,6 +1,6 @@
 import re
 from pathlib import Path
-from prisma.binaries.constants import PRISMA_VERSION
+from prisma._binaries._constants import PRISMA_VERSION
 
 
 ROOTDIR = Path(__file__).parent.parent
@@ -24,7 +24,7 @@ def main() -> None:
     ROOTDIR.joinpath('docs/index.md').write_text(content)
 
     # update the referenced PRISMA_VERSION to the latest version we support
-    binaries_doc = DOCS_DIR / 'reference' / 'binaries.md'
+    binaries_doc = DOCS_DIR / 'reference' / '_binaries.md'
     assert binaries_doc.exists()
     content = binaries_doc.read_text()
     content = re.sub(

@@ -14,8 +14,8 @@ from typing import (
 from httpx import Limits, Timeout
 
 from ._types import Method
-from .utils import _NoneType
-from .errors import HTTPClientClosedError
+from ._utils import _NoneType
+from ._errors import HTTPClientClosedError
 
 
 Session = TypeVar('Session')

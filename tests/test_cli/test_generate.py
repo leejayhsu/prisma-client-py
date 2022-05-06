@@ -16,8 +16,8 @@ from typing import (
 import pydantic
 import pytest
 from _pytest.monkeypatch import MonkeyPatch
-from prisma.utils import temp_env_update
-from prisma.generator.models import InterfaceChoices
+from prisma._utils import temp_env_update
+from prisma.generator._models import InterfaceChoices
 
 from ..utils import Testdir, Runner
 

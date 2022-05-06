@@ -3,9 +3,9 @@ import logging
 from pathlib import Path
 from pydantic import BaseModel
 
-from . import platform
-from .utils import download
-from .constants import GLOBAL_TEMP_DIR, PRISMA_URL, PRISMA_VERSION
+from . import _platform
+from ._utils import download
+from ._constants import GLOBAL_TEMP_DIR, PRISMA_URL, PRISMA_VERSION
 
 
 __all__ = ('Binary',)

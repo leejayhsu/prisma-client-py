@@ -6,12 +6,12 @@ import pytest
 from mock import AsyncMock
 from pytest_mock import MockerFixture
 
-from prisma import ENGINE_TYPE, Prisma, get_client, errors
-from prisma.http_abstract import DEFAULT_CONFIG
+from prisma import ENGINE_TYPE, Prisma, get_client, _errors
+from prisma._http_abstract import DEFAULT_CONFIG
 from prisma.engine.http import HTTPEngine
-from prisma.engine.errors import AlreadyConnectedError
-from prisma.testing import reset_client
-from prisma.cli.prisma import run
+from prisma.engine._errors import AlreadyConnectedError
+from prisma._testing import reset_client
+from prisma.cli._prisma import run
 from prisma.types import HttpConfig
 
 from .utils import Testdir, patch_method

@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from prisma.generator import GenericGenerator, models
+from prisma.generator import GenericGenerator, _models
 
 
 class Foo:

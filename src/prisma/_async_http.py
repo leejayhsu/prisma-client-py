@@ -4,7 +4,7 @@ from typing import Any
 import httpx
 
 from ._types import Method
-from .http_abstract import AbstractResponse, AbstractHTTP
+from ._http_abstract import AbstractResponse, AbstractHTTP
 
 
 __all__ = ('HTTP', 'Response', 'client')

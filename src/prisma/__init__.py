@@ -8,9 +8,9 @@ __version__ = '0.6.5a'
 
 from typing import TYPE_CHECKING
 
-from .utils import setup_logging
-from . import errors as errors
-from .validator import *
+from ._utils import setup_logging
+from . import _errors as errors
+from ._validator import *
 
 
 try:

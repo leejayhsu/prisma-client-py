@@ -6,12 +6,12 @@ from typing import List, Iterator, Optional, NoReturn
 
 import click
 
-from . import prisma
-from .utils import error
-from .custom import cli
+from . import _prisma
+from ._utils import error
+from ._custom import cli
 
 from .. import _sync_http as http
-from ..utils import DEBUG
+from .._utils import DEBUG
 from ..generator import Generator
 
 

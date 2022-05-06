@@ -1,5 +1,5 @@
 import click
-from .utils import PrismaCLI
+from ._utils import PrismaCLI
 
 
 @click.command(

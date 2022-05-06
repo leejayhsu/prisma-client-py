@@ -10,17 +10,17 @@ from typing import Generic, Dict, Type, Any, Optional, cast
 from jinja2 import Environment, FileSystemLoader
 from pydantic import BaseModel
 
-from . import jsonrpc
-from .jsonrpc import Manifest
-from .models import DefaultData, PythonData
-from .types import PartialModelFields
-from .utils import (
+from . import _jsonrpc
+from ._jsonrpc import Manifest
+from ._models import DefaultData, PythonData
+from ._types import PartialModelFields
+from ._utils import (
     copy_tree,
     is_same_path,
     resolve_template_path,
 )
 from .. import __version__
-from ..utils import DEBUG_GENERATOR
+from .._utils import DEBUG_GENERATOR
 from .._compat import cached_property
 from .._types import BaseModelT, InheritsGeneric, get_args
 
@@ -80,7 +80,7 @@ class GenericGenerator(ABC, Generic[BaseModelT]):
 
         ```prisma
         generator client {
-            provider = "python generator.py"
+            provider = "python _generator.py"
         }
         ```
         """

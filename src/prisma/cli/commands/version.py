@@ -5,10 +5,10 @@ from importlib import import_module
 
 import click
 
-from ..utils import pretty_info
+from .._utils import pretty_info
 from ... import __version__
-from ...binaries import PRISMA_VERSION, ENGINE_VERSION
-from ...binaries.platform import binary_platform
+from ..._binaries import PRISMA_VERSION, ENGINE_VERSION
+from ..._binaries._platform import binary_platform
 
 
 @click.command(

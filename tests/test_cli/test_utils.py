@@ -3,7 +3,7 @@ from pathlib import Path
 import click
 import pytest
 
-from prisma.cli import utils
+from prisma.cli import _utils
 from tests.utils import Runner
 
 

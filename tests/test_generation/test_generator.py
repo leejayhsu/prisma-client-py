@@ -13,7 +13,7 @@ from prisma.generator import (
     render_template,
     cleanup_templates,
 )
-from prisma.generator.utils import Faker, copy_tree
+from prisma.generator._utils import Faker, copy_tree
 
 from .utils import assert_module_is_clean, assert_module_not_clean
 from ..utils import Testdir

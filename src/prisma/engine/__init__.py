@@ -1,4 +1,4 @@
-from .errors import *
+from ._errors import *
 
 try:
     from .query import *

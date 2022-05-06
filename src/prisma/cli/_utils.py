@@ -16,8 +16,8 @@ from typing import (
 
 import click
 
-from . import prisma
-from ..utils import module_exists
+from . import _prisma
+from .._utils import module_exists
 from .._types import Literal
 
 

@@ -1,6 +1,6 @@
 import pytest
 from prisma import Prisma
-from prisma.errors import DataError
+from prisma._errors import DataError
 
 
 @pytest.mark.asyncio

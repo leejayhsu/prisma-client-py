@@ -2,9 +2,9 @@ import shutil
 from pathlib import Path
 
 import pytest
-from prisma.cli import prisma
-from prisma.cli.utils import maybe_exit
-from prisma.utils import DEBUG_GENERATOR
+from prisma.cli import _prisma
+from prisma.cli._utils import maybe_exit
+from prisma._utils import DEBUG_GENERATOR
 
 from .utils import ROOTDIR
 

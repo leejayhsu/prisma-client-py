@@ -3,7 +3,7 @@ import logging
 import contextlib
 from typing import Iterator
 
-from prisma.utils import async_run
+from prisma._utils import async_run
 
 from bot import bot
 

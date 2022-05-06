@@ -4,10 +4,10 @@ from textwrap import dedent
 from typing import Any, List, TypeVar, Union, TYPE_CHECKING
 from pathlib import Path
 
-from ..utils import monkeypatch
+from .._utils import monkeypatch
 
 if TYPE_CHECKING:
-    from .models import Model, Field
+    from ._models import Model, Field
 
 
 T = TypeVar('T')

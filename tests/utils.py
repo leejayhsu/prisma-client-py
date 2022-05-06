@@ -28,8 +28,8 @@ from click.testing import CliRunner, Result
 
 from prisma.cli import main
 from prisma._types import FuncType
-from prisma.generator.utils import copy_tree
-from prisma.generator.generator import BASE_PACKAGE_DIR
+from prisma.generator._utils import copy_tree
+from prisma.generator._generator import BASE_PACKAGE_DIR
 
 
 if TYPE_CHECKING:

@@ -3,7 +3,7 @@ import subprocess
 
 import pytest
 
-from prisma.utils import temp_env_update
+from prisma._utils import temp_env_update
 from ..utils import Testdir
 
 

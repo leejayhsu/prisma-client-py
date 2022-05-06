@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 from pydantic import ValidationError
-from prisma.generator.models import Module, Config
+from prisma.generator._models import Module, Config
 
 
 def test_module_serialization() -> None:

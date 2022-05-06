@@ -1,5 +1,5 @@
 import random
-from prisma.binaries import BINARIES
+from prisma._binaries import BINARIES
 
 
 def test_download() -> None:

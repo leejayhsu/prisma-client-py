@@ -6,9 +6,9 @@ from typing import Optional, Dict, Any
 import click
 import pydantic
 
-from .. import prisma, options
-from ..utils import EnumChoice, PathlibPath, warning
-from ...generator.models import InterfaceChoices
+from .. import _prisma, _options
+from .._utils import EnumChoice, PathlibPath, warning
+from ...generator._models import InterfaceChoices
 
 
 ARG_TO_CONFIG_KEY = {

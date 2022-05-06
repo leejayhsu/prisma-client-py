@@ -7,7 +7,7 @@ from typing import List, Optional, Dict
 
 import click
 
-from .. import binaries
+from .. import _binaries
 
 
 log: logging.Logger = logging.getLogger(__name__)
@@ -18,8 +18,8 @@ def run(
     check: bool = False,
     env: Optional[Dict[str, str]] = None,
 ) -> int:
-    directory = binaries.ensure_cached()
-    path = directory.joinpath(binaries.PRISMA_CLI_NAME)
+    directory = _binaries.ensure_cached()
+    path = directory.joinpath(_binaries.PRISMA_CLI_NAME)
     if not path.exists():
         raise RuntimeError(
             f'The Prisma CLI is not downloaded, expected {path} to exist.'
@@ -34,8 +34,8 @@ def run(
         'PRISMA_CLI_QUERY_ENGINE_TYPE': 'binary',
     }
     env = {**default_env, **env} if env is not None else default_env
-    # ensure the client uses our engine binaries
-    for engine in binaries.ENGINES:
+    # ensure the client uses our engine _binaries
+    for engine in _binaries.ENGINES:
         env[engine.env] = str(engine.path.absolute())
 
     if args and args[0] == 'studio':

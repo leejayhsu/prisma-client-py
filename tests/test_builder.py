@@ -5,9 +5,9 @@ from typing import Dict, Any
 
 import pytest
 from syrupy.assertion import SnapshotAssertion
-from prisma.utils import _NoneType
+from prisma._utils import _NoneType
 from prisma.builder import QueryBuilder, serializer
-from prisma.errors import UnknownRelationalFieldError, UnknownModelError
+from prisma._errors import UnknownRelationalFieldError, UnknownModelError
 
 
 # TODO: more tests

@@ -68,7 +68,7 @@ nav:
       - Command Line: reference/command-line.md
       - Custom Generators: reference/custom-generators.md
       - Logging: reference/logging.md
-      - Binaries: reference/binaries.md
+      - Binaries: reference/_binaries.md
   - Contributing:
       - How to Contribute: contributing/contributing.md
       - Architecture: contributing/architecture.md

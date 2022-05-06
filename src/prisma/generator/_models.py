@@ -42,12 +42,12 @@ except ImportError:
     SettingsSourceCallable = Any  # type: ignore
 
 
-from .utils import Faker, Sampler, clean_multiline
-from ..utils import DEBUG_GENERATOR, assert_never
+from ._utils import Faker, Sampler, clean_multiline
+from .._utils import DEBUG_GENERATOR, assert_never
 from .._compat import validator, root_validator, cached_property
 from .._constants import QUERY_BUILDER_ALIASES
-from ..errors import UnsupportedListTypeError
-from ..binaries.constants import ENGINE_VERSION, PRISMA_VERSION
+from .._errors import UnsupportedListTypeError
+from .._binaries._constants import ENGINE_VERSION, PRISMA_VERSION
 
 
 __all__ = (
@@ -964,5 +964,5 @@ Generator.update_forward_refs()
 Datasource.update_forward_refs()
 
 
-from .schema import Schema
-from .errors import CompoundConstraintError, TemplateError
+from ._schema import Schema
+from ._errors import CompoundConstraintError, TemplateError

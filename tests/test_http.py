@@ -5,8 +5,8 @@ import httpx
 
 from prisma.http import HTTP
 from prisma._types import Literal
-from prisma.utils import _NoneType
-from prisma.errors import HTTPClientClosedError
+from prisma._utils import _NoneType
+from prisma._errors import HTTPClientClosedError
 
 from .utils import patch_method
 

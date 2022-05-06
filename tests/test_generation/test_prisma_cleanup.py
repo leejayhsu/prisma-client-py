@@ -6,7 +6,7 @@ from typing import TYPE_CHECKING
 import pytest
 from prisma_cleanup import cleanup
 from prisma.generator import BASE_PACKAGE_DIR
-from prisma.generator.utils import copy_tree
+from prisma.generator._utils import copy_tree
 
 from .utils import assert_module_is_clean, assert_module_not_clean
 from ..utils import Testdir

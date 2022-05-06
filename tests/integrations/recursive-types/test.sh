@@ -14,5 +14,5 @@ pip install -U --force-reinstall ../../../.tests_cache/dist/*.whl
 prisma generate
 
 # TODO: check the whole package
-TYPES=$(python -c 'import pathlib, prisma; print(pathlib.Path(prisma.__file__).parent / "types.py")')
+TYPES=$(python -c 'import pathlib, prisma; print(pathlib.Path(prisma.__file__).parent / "_types.py")')
 pyright $TYPES

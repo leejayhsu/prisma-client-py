@@ -9,7 +9,7 @@ from syrupy.extensions.amber.serializer import DataSerializer
 from syrupy.extensions.single_file import SingleFileSnapshotExtension
 
 from prisma.generator import BASE_PACKAGE_DIR
-from prisma.generator.utils import remove_suffix
+from prisma.generator._utils import remove_suffix
 from .utils import ROOTDIR
 
 

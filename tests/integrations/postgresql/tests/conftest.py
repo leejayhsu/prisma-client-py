@@ -6,7 +6,7 @@ from contextvars import ContextVar
 import pytest
 
 from prisma import Prisma, register
-from prisma.utils import async_run, get_or_create_event_loop
+from prisma._utils import async_run, get_or_create_event_loop
 
 
 client_ctx: ContextVar['Prisma'] = ContextVar('client_ctx', default=Prisma())

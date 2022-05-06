@@ -10,7 +10,7 @@ import pytest
 from _pytest.monkeypatch import MonkeyPatch
 
 from prisma.http import client
-from prisma.utils import temp_env_update
+from prisma._utils import temp_env_update
 from prisma.cli.commands import dev
 from ..utils import Testdir, Runner
 

@@ -3,7 +3,7 @@ from typing import List
 
 import click
 import pytest
-from prisma.cli.utils import EnumChoice
+from prisma.cli._utils import EnumChoice
 
 from tests.utils import Runner
 

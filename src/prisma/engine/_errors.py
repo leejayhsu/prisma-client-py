@@ -1,7 +1,7 @@
 from typing import Any
 
-from ..errors import PrismaError
-from ..http_abstract import AbstractResponse
+from .._errors import PrismaError
+from .._http_abstract import AbstractResponse
 
 
 __all__ = (

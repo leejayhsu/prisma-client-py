@@ -2,9 +2,9 @@ from typing import Optional, Any, cast
 
 import click
 
-from .. import options
-from ..utils import generate_client, error
-from ...utils import maybe_async_run, temp_env_update, module_exists
+from .. import _options
+from .._utils import generate_client, error
+from ..._utils import maybe_async_run, temp_env_update, module_exists
 
 
 @click.group()

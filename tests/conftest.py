@@ -9,8 +9,8 @@ import pytest
 import prisma
 from prisma import Prisma
 from prisma.cli import setup_logging
-from prisma.testing import reset_client
-from prisma.utils import get_or_create_event_loop
+from prisma._testing import reset_client
+from prisma._utils import get_or_create_event_loop
 
 from .utils import Runner, Testdir, async_fixture
 

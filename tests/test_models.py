@@ -2,7 +2,7 @@ import pytest
 from fastapi import FastAPI
 
 from prisma.models import User
-from prisma.errors import UnsupportedSubclassWarning
+from prisma._errors import UnsupportedSubclassWarning
 
 
 # pyright: reportUnusedClass=false

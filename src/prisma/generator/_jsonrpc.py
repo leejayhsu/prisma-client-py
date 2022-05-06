@@ -5,7 +5,7 @@ from pathlib import Path
 from typing import Dict, List, Optional, Union, Type, Any
 from pydantic import Field
 
-from .models import BaseModel
+from ._models import BaseModel
 
 
 log: logging.Logger = logging.getLogger(__name__)

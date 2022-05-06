@@ -6,9 +6,9 @@ from typing import Optional, List
 
 import click
 
-from .binary import Binary
-from .engine import Engine
-from .constants import GLOBAL_TEMP_DIR, PRISMA_CLI_NAME
+from ._binary import Binary
+from ._engine import Engine
+from ._constants import GLOBAL_TEMP_DIR, PRISMA_CLI_NAME
 
 
 __all__ = (
@@ -46,7 +46,7 @@ def ensure_cached() -> Path:
             binaries.append(binary)
 
     if not binaries:
-        log.debug('All binaries are cached')
+        log.debug('All _binaries are cached')
         return GLOBAL_TEMP_DIR
 
     def show_item(item: Optional[Binary]) -> str:
@@ -56,7 +56,7 @@ def ensure_cached() -> Path:
 
     with click.progressbar(
         binaries,
-        label='Downloading binaries',
+        label='Downloading _binaries',
         fill_char=click.style('#', fg='yellow'),
         item_show_func=show_item,
     ) as iterator:
@@ -67,7 +67,7 @@ def ensure_cached() -> Path:
 
 
 def remove_all() -> None:
-    """Remove all downloaded binaries"""
+    """Remove all downloaded _binaries"""
     for binary in BINARIES:
         if binary.path.exists():
             binary.path.unlink()
